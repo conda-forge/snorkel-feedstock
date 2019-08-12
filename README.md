@@ -7,11 +7,10 @@ Package license: Apache 2.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: Snorkel is a system for programmatically building and managing training
-datasets to rapidly and flexibly fuel machine learning models.
+Summary: Snorkel is a system for programmatically building and managing training datasets to rapidly and flexibly fuel machine learning models.
 
-Snorkel is a system for programmatically building and managing training datasets
-to rapidly and flexibly fuel machine learning models.
+Snorkel is a system for programmatically building and managing training
+datasets to rapidly and flexibly fuel machine learning models.
 Users write programmatic operations to label, transform, and structure training
 datasets for machine learning, without needing to hand label any training data.
 Snorkel then uses modern, theoretically-grounded modeling techniques to clean and
@@ -123,5 +122,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@henryre](https://github.com/henryre/)
 * [@adbeda](https://github.com/adbeda/)
+* [@henryre](https://github.com/henryre/)
+
