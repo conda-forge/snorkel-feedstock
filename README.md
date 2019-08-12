@@ -1,4 +1,4 @@
-Abohenryrerkel
+About snorkel
 =============
 
 Home: http://snorkel.org
@@ -9,7 +9,6 @@ Feedstock license: BSD 3-Clause
 
 Summary: Snorkel is a system for programmatically building and managing training
 datasets to rapidly and flexibly fuel machine learning models.
-
 
 Snorkel is a system for programmatically building and managing training datasets
 to rapidly and flexibly fuel machine learning models.
@@ -125,4 +124,4 @@ Feedstock Maintainers
 =====================
 
 * [@henryre](https://github.com/henryre/)
-
+* [@adbeda](https://github.com/adbeda/)
