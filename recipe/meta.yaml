@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/snorkel-team/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 483eca03494255474452a97a0e13b27868f0fadaecb4bfc2c7610e28f54d87d8
+  sha256: 0a09a9eeaaab1e78a4e49dc1f56c3faa1a116c7d2d2bd23f2ea8f7341c7f83c0
 
 build:
 
