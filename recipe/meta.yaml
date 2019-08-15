@@ -1,18 +1,18 @@
 {% set name = "snorkel" %}
-{% set version = "0.7.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/snorkel-team/{{ name }}/archive/v{{ version }}-beta.tar.gz
+  url: https://github.com/snorkel-team/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
   sha256: 483eca03494255474452a97a0e13b27868f0fadaecb4bfc2c7610e28f54d87d8
 
 build:
 
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -20,18 +20,23 @@ requirements:
   host:
     - python >=3.6
     - pip
-  run:  #https://github.com/snorkel-team/snorkel/blob/master/environment.yml
+  run:
     - python >=3.6
-    - numpy >=1.16.1
-    - sqlalchemy >=1.3.3
-    - scipy >=1.2.1
+    - numpy >=1.16.0,<2.0.0
+    - scipy >=1.2.0,<2.0.0
+    - pandas >=0.24.0,<0.25.0
+    - tqdm >=4.29.0,<5.0.0
+    - scikit-learn >=0.20.2,<0.22.0
+    - torch >=1.1.0,<1.2.0
+    - networkx >=2.2,<3.0
+    - tensorboardX >=1.6,<2.0
 
 test:
   imports:
     - snorkel
 
 about:
-  home: http://snorkel.org
+  home: https://snorkel.org
   license: Apache 2.0
   license_family: Apache
   license_file: LICENSE
