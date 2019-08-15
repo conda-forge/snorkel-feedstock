@@ -49,7 +49,7 @@ about:
     datasets for machine learning, without needing to hand label any training data.
     Snorkel then uses modern, theoretically-grounded modeling techniques to clean and
     integrate the resulting training data.
-  doc_url: https://snorkel.readthedocs.io/
+  doc_url: https://snorkel.readthedocs.io
   dev_url: https://github.com/snorkel-team/snorkel
 
 extra:
