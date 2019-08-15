@@ -1,7 +1,7 @@
 About snorkel
 =============
 
-Home: http://snorkel.org
+Home: https://snorkel.org
 
 Package license: Apache 2.0
 
