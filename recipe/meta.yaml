@@ -1,5 +1,5 @@
 {% set name = "snorkel" %}
-{% set version = "0.9.1" %}
+{% set version = "0.9.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/snorkel-team/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 18e2e1085a8165ebf1d7c2b9cc22c61ecef7d3b8f8da55aefdf87d7940ac0c5b
+  sha256: 61640e735126f7387c0dfe00deba5c10aa5f4e5b406b6581e77a567c9cc81c53
 
 build:
 
