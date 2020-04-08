@@ -1,5 +1,5 @@
 {% set name = "snorkel" %}
-{% set version = "0.9.3" %}
+{% set version = "0.9.4" %}
 
 package:
   name: {{ name|lower }}
@@ -26,9 +26,9 @@ requirements:
     - pandas >=0.25.0,<0.26.0
     - tqdm >=4.33.0,<5.0.0
     - scikit-learn >=0.20.2,<0.22.0
-    - pytorch >=1.1.0,<1.2.0
+    - pytorch >=1.2.0,<1.2.0
     - networkx >=2.2,<2.4
-    - tensorboardX >=1.6,<2.0
+    - tensorboard>=1.14.0,<2.0.0
     - munkres >=1.0.12,<2.0.0
 
 test:
