@@ -12,7 +12,7 @@ source:
 build:
 
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -21,6 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.6
+    - munkres >=1.0.6
     - numpy >=1.16.0,<2.0.0
     - scipy >=1.2.0,<2.0.0
     - pandas >=0.25.0,<0.26.0
@@ -29,7 +30,6 @@ requirements:
     - pytorch >=1.1.0,<1.2.0
     - networkx >=2.2,<2.4
     - tensorboardX >=1.6,<2.0
-    - munkres >=1.0.12,<2.0.0
 
 test:
   imports:
