@@ -1,5 +1,5 @@
 {% set name = "snorkel" %}
-{% set version = "0.9.4" %}
+{% set version = "0.9.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/snorkel-team/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 303d1f41be1e08eeccdd766f6cdaadd45ebd8747b46d577e9c0a9394a605512e
+  sha256: 44e794f2897bb4c115e1385ab4656122383f94386329b85af286ae189a60e0fa
 
 build:
 
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -27,9 +27,9 @@ requirements:
     - pandas >=0.25.0,<0.26.0
     - tqdm >=4.33.0,<5.0.0
     - scikit-learn >=0.20.2,<0.22.0
-    - pytorch >=1.1.0,<1.2.0
+    - pytorch >=1.2.0,<2.0.0
+    - tensorboard >=1.14.0,<2.0.0
     - networkx >=2.2,<2.4
-    - tensorboardX >=1.6,<2.0
 
 test:
   imports:
