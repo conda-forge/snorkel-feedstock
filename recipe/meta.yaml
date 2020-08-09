@@ -1,5 +1,5 @@
 {% set name = "snorkel" %}
-{% set version = "0.9.5" %}
+{% set version = "0.9.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/snorkel-team/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 44e794f2897bb4c115e1385ab4656122383f94386329b85af286ae189a60e0fa
+  sha256: 2015462f575c7cd8bdc01ca37ea4635530e29a70b5d6440480b5336c8b59a1d0
 
 build:
 
@@ -24,7 +24,7 @@ requirements:
     - munkres >=1.0.6
     - numpy >=1.16.0,<2.0.0
     - scipy >=1.2.0,<2.0.0
-    - pandas >=0.25.0,<0.26.0
+    - pandas >=0.25.0,<2.0.0
     - tqdm >=4.33.0,<5.0.0
     - scikit-learn >=0.20.2,<0.22.0
     - pytorch >=1.2.0,<2.0.0
