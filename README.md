@@ -155,7 +155,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@adbeda](https://github.com/adbeda/)
 * [@bhancock8](https://github.com/bhancock8/)
 * [@henryre](https://github.com/henryre/)
 * [@mxr-conda](https://github.com/mxr-conda/)
