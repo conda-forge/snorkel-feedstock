@@ -134,4 +134,4 @@ Feedstock Maintainers
 * [@oblute](https://github.com/oblute/)
 * [@rluria14](https://github.com/rluria14/)
 * [@vincentschen](https://github.com/vincentschen/)
-
+* [@bhancock8](https://github.com/bhancock8/)
