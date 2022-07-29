@@ -1,5 +1,5 @@
 {% set name = "snorkel" %}
-{% set version = "0.9.8" %}
+{% set version = "0.9.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/snorkel-team/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1e044da841bbc09f3310037049f464e1f16671d6702d54258c502ae6aa12ed1b
+  sha256: a5d04e3c349919a7838e4bfd2bb603a72a241e5dacf08b7588a93b883d2c16b0
 
 build:
 
@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://snorkel.org
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: Snorkel is a system for programmatically building and managing training datasets to rapidly and flexibly fuel machine learning models.
@@ -58,6 +58,5 @@ extra:
     - henryre
     - vincentschen
     - bhancock8
-    - adbeda
     - oblute
     - rluria14
