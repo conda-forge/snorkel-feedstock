@@ -5,7 +5,7 @@ Home: https://snorkel.org
 
 Package license: Apache 2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/snorkel-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/snorkel-feedstock/blob/main/LICENSE.txt)
 
 Summary: Snorkel is a system for programmatically building and managing training datasets to rapidly and flexibly fuel machine learning models.
 
@@ -27,8 +27,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7098&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/snorkel-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7098&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/snorkel-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -51,16 +51,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `snorkel` can be installed with:
+Once the `conda-forge` channel has been enabled, `snorkel` can be installed with `conda`:
 
 ```
 conda install snorkel
 ```
 
-It is possible to list all of the versions of `snorkel` available on your platform with:
+or with `mamba`:
+
+```
+mamba install snorkel
+```
+
+It is possible to list all of the versions of `snorkel` available on your platform with `conda`:
 
 ```
 conda search snorkel --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search snorkel --channel conda-forge
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search snorkel --channel conda-forge
+
+# List packages depending on `snorkel`:
+mamba repoquery whoneeds snorkel --channel conda-forge
+
+# List dependencies of `snorkel`:
+mamba repoquery depends snorkel --channel conda-forge
 ```
 
 
@@ -78,10 +103,12 @@ for each of the installable packages. Such a repository is known as a *feedstock
 A feedstock is made up of a conda recipe (the instructions on what and how to build
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
-[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
-packages to the [conda-forge](https://anaconda.org/conda-forge)
-[Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
+[Azure](https://azure.microsoft.com/en-us/services/devops/), [GitHub](https://github.com/),
+[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
+[Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
+it is possible to build and upload installable packages to the
+[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
 [conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
@@ -129,9 +156,10 @@ Feedstock Maintainers
 =====================
 
 * [@adbeda](https://github.com/adbeda/)
+* [@bhancock8](https://github.com/bhancock8/)
 * [@henryre](https://github.com/henryre/)
 * [@mxr-conda](https://github.com/mxr-conda/)
 * [@oblute](https://github.com/oblute/)
 * [@rluria14](https://github.com/rluria14/)
 * [@vincentschen](https://github.com/vincentschen/)
-* [@bhancock8](https://github.com/bhancock8/)
+
